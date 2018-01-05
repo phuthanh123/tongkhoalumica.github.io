@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$.getJSON( "https://tongkhoalu.com/wp-json/wp/v2/categories?exclude=", function(data) {
+	$.getJSON( "https://tongkhoalu.com/wp-json/wp/v2/categories?exclude=96", function(data) {
 		list_cat = [];
 		list_name = [];
         $.each(data, function(id,item) {
@@ -26,9 +26,9 @@ jQuery(document).ready(function($) {
     });
 	function get_data(id){
 		if(id){
-			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=50&categories='+id;
+			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=96&categories=96'+id;
 		} else{
-			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=50';
+			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=96';
 		}
 		$.getJSON( url, function(data) {
 	        $.each(data, function(id,item) {

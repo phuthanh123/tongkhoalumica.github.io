@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 	$.getJSON( "https://tongkhoalu.com/wp-json/wp/v2/categories", function(data) {
-		list_cat = [];
+		list_cat = [96];
 		list_name = [];
         $.each(data, function(id,item) {
         	var html = '<li>';

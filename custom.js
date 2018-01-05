@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
     });
 	function get_data(id){
 		if(id){
-			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=50&categories=96'+id;
+			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=50&categories='+id;
 		} else{
 			var url = 'https://tongkhoalu.com/wp-json/wp/v2/posts?per_page=50';
 		}

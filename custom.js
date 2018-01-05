@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$.getJSON( "https://tongkhoalu.com/wp-json/wp/v2/categories?exclude=10,5,6,1,4", function(data) {
+	$.getJSON( "https://tongkhoalu.com/wp-json/wp/v2/posts", function(data) {
 		list_cat = [];
 		list_name = [];
         $.each(data, function(id,item) {
